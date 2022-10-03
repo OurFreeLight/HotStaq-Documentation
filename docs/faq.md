@@ -5,7 +5,7 @@ sidebar_position: 3
 # FAQ
 
 ## Is this a replacement for React or Angular?
-No. It can execute React or Angular applications.
+No. It can execute React or Angular applications. Additionally it can run along them as well.
 
 ## Does this work with Internet Explorer 11?
 Not yet. This is unfortunately on the roadmap.

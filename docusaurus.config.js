@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'HotStaq',
   tagline: 'Build apps and infrastructure easily.',
-  url: 'https://hotstaq.github.io',
+  url: 'https://hotstaq.com/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -24,7 +24,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/OurFreeLight/HotStaq-Documentation/blob/master/docs/',
+          editUrl: 'https://github.com/OurFreeLight/HotStaq-Documentation/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
