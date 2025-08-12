@@ -10,6 +10,12 @@ You can configure how HotStaq starts by using:
 	* Accepted values:
 		* mysql
 		* influx
+* DATABASE_DISABLE
+	* Type: number
+	* Description: If set to 0, the database will not be used.
+	* Accepted values:
+		* 0
+		* 1
 * DATABASE_SERVER
 	* Type: string
 	* Description: The url to the database server to connect to.
@@ -46,11 +52,34 @@ You can configure how HotStaq starts by using:
 	* Description: The database schema (or bucket) to use.
 	* Accepted values:
 		* Any string.
+* DATABASE_CONNECTIONS_LIMIT
+	* Type: number
+	* Description: The max number of database connections to maintain.
+	* Default: 10
+	* Accepted values:
+		* Any integer.
+* JSON_LIMIT
+	* Type: string
+	* Description: The maximum amount of JSON that can be uploaded.
+	* Default: 1mb
+	* Accepted values:
+		* Any string.
+* LOGGING_LEVEL
+	* Type: string
+	* Description: The logging level to use.
+	* Accepted values:
+		* info
+		* warning
+		* error
+		* verbose
+		* all
+		* none
 * SELENIUM_REMOTE_SERVER
 	* Type: string
-	* Description: The remote selenium server to do web browser tests with.
+	* Description: The remote selenium server to do web browser tests with. This will also ensure that the server is being used headless.
 	* Accepted values:
 		* Any valid url.
+		* http://localhost:
 * SELENIUM_WINDOW_WIDTH
 	* Type: number
 	* Description: The width of the new browser window.
@@ -72,3 +101,8 @@ You can configure how HotStaq starts by using:
 	* Description: The remote server to use during browser tests.
 	* Accepted values:
 		* Any valid url.
+* TESTING_RUN_HEADLESS
+	* Type: string
+	* Description: If set to any value, the launched chrome browser will run headless.
+	* Accepted values:
+		* Any

@@ -104,9 +104,14 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} FreeLight, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
+        theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      }
     }),
 };
 

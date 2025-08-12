@@ -3,33 +3,17 @@ sidebar_position: 1
 ---
 
 # Getting Started
-
-Get started by **installing HotStaq**.
-
+Create your first project named `my-app` by entering:
 ```console
-npm -g install hotstaq
+npx hotstaq create my-app
 ```
 
-Now we can **create a new app**.
-
-## Creating a New App
-
-Generate a new HotStaq app using **TypeScript**:
-
-```console
-hotstaq create my-app
-```
-
-## Start your site
-
-Run the development web server:
-
+Navigate into the newly created `my-app` directory, and run the development web server:
 ```console
 cd my-app
-
-hotstaq start
+npm start
 ```
 
-Your site starts at `http://localhost:8080`.
+Your site starts at `http://localhost:5000`. Open a web browser to that location, and you can see the welcome page.
 
-Open `public/index.hott` and change your landing page. Refresh your browser to see your changes immediately.
+In your `my-app` directory, open `public/index.hott` and change your landing page. Refresh your browser to see your changes immediately.
